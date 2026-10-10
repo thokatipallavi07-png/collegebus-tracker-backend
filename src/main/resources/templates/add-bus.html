@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Bus</title>
+</head>
+
+<body>
+
+<h1>🚌 Add New Bus</h1>
+
+<form action="/admin/add-bus" method="post">
+
+    <label>Bus Number:</label><br>
+    <input type="text" name="busNumber" placeholder="BUS-11" required>
+    <br><br>
+
+    <label>Route:</label><br>
+    <input type="text" name="route" placeholder="Keesara Route" required>
+    <br><br>
+
+    <label>Driver Name:</label><br>
+    <input type="text" name="driverName" placeholder="Driver Name" required>
+    <br><br>
+
+    <label>Current Location:</label><br>
+    <input type="text" name="currentLocation" placeholder="Keesara" required>
+    <br><br>
+
+    <label>Status:</label><br>
+
+    <select name="status">
+        <option value="Running">Running</option>
+        <option value="Stopped">Stopped</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Add Bus</button>
+
+</form>
+
+</body>
+</html>

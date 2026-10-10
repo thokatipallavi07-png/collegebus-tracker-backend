@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - College Bus Tracker</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        /* Navigation bar */
+        nav {
+            background: #1976d2;
+            color: white;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dashboard */
+        .container {
+            padding: 35px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title h1 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        .number {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .status {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Information section */
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            color: #1976d2;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #1976d2;
+            color: white;
+        }
+
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .contact {
+            background: #e3f2fd;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <h2>🚌 College Bus Tracker</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/tracking">Bus Tracking</a>
+        <a href="/routes">Routes & Stops</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+
+<!-- Dashboard -->
+<div class="container">
+
+    <div class="title">
+        <h1>Bus Tracker Dashboard</h1>
+        <p>View the current status of college transportation.</p>
+    </div>
+
+
+    <!-- Summary Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h2>🚌 Total Buses</h2>
+            <div class="number">10</div>
+            <p>Buses Registered</p>
+        </div>
+
+        <div class="card">
+            <h2>📍 Active Buses</h2>
+            <div class="number">7</div>
+            <p class="status">● Currently Running</p>
+        </div>
+
+        <div class="card">
+            <h2>🛣️ Routes</h2>
+            <div class="number">8</div>
+            <p>College Routes</p>
+        </div>
+
+        <div class="card">
+            <h2>🚏 Bus Stops</h2>
+            <div class="number">35</div>
+            <p>Pickup & Drop Points</p>
+        </div>
+
+    </div>
+
+
+    <!-- Bus Information -->
+    <div class="section">
+
+        <h2>🚌 Current Bus Status</h2>
+
+        <table>
+
+            <tr>
+                <th>Bus No.</th>
+                <th>Route</th>
+                <th>Current Location</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>BUS-01</td>
+                <td>Hyderabad Route</td>
+                <td>Near College</td>
+                <td class="available">Running</td>
+            </tr>
+
+            <tr>
+                <td>BUS-02</td>
+                <td>ECIL Route</td>
+                <td>ECIL X Road</td>
+                <td class="available">Running</td>
+            </tr>
+
+            <tr>
+                <td>BUS-03</td>
+                <td>Keesara Route</td>
+                <td>Keesara</td>
+                <td class="available">Running</td>
+            </tr>
+
+            <tr>
+                <td>BUS-04</td>
+                <td>Medchal Route</td>
+                <td>Medchal</td>
+                <td>Stopped</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- Student Information -->
+    <div class="section">
+
+        <h2>👩‍🎓 Student Information</h2>
+
+        <p>Students can use this system to:</p>
+
+        <br>
+
+        <ul>
+            <li>Track college buses</li>
+            <li>View bus routes</li>
+            <li>Find nearby bus stops</li>
+            <li>Check bus availability</li>
+            <li>Contact the transportation department</li>
+        </ul>
+
+    </div>
+
+
+    <!-- Contact -->
+    <div class="section contact">
+
+        <h2>📞 Transportation Department</h2>
+
+        <p><b>Phone:</b> 9876543210</p>
+        <p><b>Email:</b> transport@college.edu</p>
+        <p><b>Office:</b> College Transportation Department</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

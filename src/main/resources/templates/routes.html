@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Routes & Stops - College Bus Tracker</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: #1976d2;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1976d2;
+        }
+
+        .route-card {
+            background: white;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .route-card h2 {
+            color: #1976d2;
+        }
+
+        .stops {
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>🚌 College Bus Tracker</h2>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/tracking">Bus Tracking</a>
+        <a href="/routes">Routes & Stops</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>🗺️ Bus Routes & Stops</h1>
+
+    <div class="route-card">
+        <h2>BUS-01 — Keesara Route</h2>
+
+        <div class="stops">
+            📍 Keesara<br>
+            📍 Nagaram<br>
+            📍 ECIL<br>
+            📍 Malkajgiri<br>
+            📍 College
+        </div>
+    </div>
+
+    <div class="route-card">
+        <h2>BUS-02 — ECIL Route</h2>
+
+        <div class="stops">
+            📍 ECIL X Road<br>
+            📍 AS Rao Nagar<br>
+            📍 Sainikpuri<br>
+            📍 Malkajgiri<br>
+            📍 College
+        </div>
+    </div>
+
+    <div class="route-card">
+        <h2>BUS-03 — Hyderabad Route</h2>
+
+        <div class="stops">
+            📍 Uppal<br>
+            📍 Habsiguda<br>
+            📍 Tarnaka<br>
+            📍 Mettuguda<br>
+            📍 College
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
